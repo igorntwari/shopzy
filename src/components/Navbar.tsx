@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Search, Heart, ShoppingCart, User } from "lucide-react";
+import { Search, Heart, ShoppingCart, User, Menu } from "lucide-react";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="flex items-center space-x-4">
+        <div className="sm:flex hidden items-center space-x-4">
           <div className="relative">
             <input
               type="text"
@@ -59,6 +59,12 @@ const Navbar = () => {
             <User className="h-6 w-6" />
           </Link>
         </div>
+        <Link
+          to="/menu"
+          className="text-gray-700 hover:text-red-500 sm:hidden block "
+        >
+          <Menu className="h-6 w-6" />
+        </Link>
       </div>
     </nav>
   );
