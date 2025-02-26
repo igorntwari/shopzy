@@ -7,8 +7,8 @@ const TopBar = () => {
       </p>
       <div className="absolute right-4 top-2">
         <select className="bg-black text-white text-xs border-none outline-none">
-          <option>English</option>
-          <option>French</option>
+          <option>ENG</option>
+          <option>FR</option>
         </select>
       </div>
     </div>

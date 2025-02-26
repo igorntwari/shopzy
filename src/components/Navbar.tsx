@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 import { Search, Heart, ShoppingCart, User } from "lucide-react";
 import { useState } from "react";
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
     <nav className="bg-white py-4 border-b border-gray-200">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold">
-          Exclusive
+        <Link to="/" className="text-2xl font-helvetica font-bold">
+          Shopzy
         </Link>
 
         <div className="hidden md:flex space-x-8">
