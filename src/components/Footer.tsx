@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Send } from "lucide-react";
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
     <footer className="bg-black text-white pt-12 pb-6">
       <div className="container mx-auto px-4">
