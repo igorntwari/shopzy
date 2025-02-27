@@ -1,11 +1,10 @@
-import VoucherBanner from "../components/VoucherBanner";
 import FlashSale from "../components/FlashSale";
 import Categories from "../components/Categories";
 import BestSelling from "../components/BestSelling";
-import HoteSales from "../components/HotSales";
 import Explorer from "../components/Explorer";
 import NewArrival from "../components/NewArrival";
 import Service from "../components/Service";
+import VoucherBanner from "../components/VoucherBanner";
 const HomePage = () => {
   return (
     <div>
@@ -17,8 +16,6 @@ const HomePage = () => {
       <Categories />
       {/* Best Selling Products */}
       <BestSelling />
-      {/* hot sales */}
-      <HoteSales />
       {/* Explore Our Products */}
       <Explorer />
       {/* New Arrival */}
