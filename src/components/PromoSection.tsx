@@ -1,6 +1,6 @@
 import { Truck, ShieldCheck, RotateCcw, Clock } from "lucide-react";
 
-const PromoSection: React.FC = () => {
+const PromoSection = () => {
   const features = [
     {
       name: "Free Shipping",

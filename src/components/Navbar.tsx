@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+"use client";
 import { Search, Heart, ShoppingCart, User, Menu } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -8,21 +9,21 @@ const Navbar = () => {
   return (
     <nav className="bg-white py-4 border-b border-gray-200">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-helvetica font-bold">
+        <Link href="/" className="text-2xl font-helvetica font-bold">
           Shopzy
         </Link>
 
         <div className="hidden md:flex space-x-8">
-          <Link to="/" className="hover:text-red-500">
+          <Link href="/" className="hover:text-red-500">
             Home
           </Link>
-          <Link to="/contact" className="hover:text-red-500">
+          <Link href="/contact" className="hover:text-red-500">
             Contact
           </Link>
-          <Link to="/about" className="hover:text-red-500">
+          <Link href="/about" className="hover:text-red-500">
             About
           </Link>
-          <Link to="/signup" className="hover:text-red-500">
+          <Link href="/signup" className="hover:text-red-500">
             Sign Up
           </Link>
         </div>
@@ -41,12 +42,12 @@ const Navbar = () => {
             </button>
           </div>
 
-          <Link to="/wishlist" className="text-gray-700 hover:text-red-500">
+          <Link href="/wishlist" className="text-gray-700 hover:text-red-500">
             <Heart className="h-6 w-6" />
           </Link>
 
           <Link
-            to="/cart"
+            href="/cart"
             className="text-gray-700 hover:text-red-500 relative"
           >
             <ShoppingCart className="h-6 w-6" />
@@ -55,12 +56,12 @@ const Navbar = () => {
             </span>
           </Link>
 
-          <Link to="/login" className="text-gray-700 hover:text-red-500">
+          <Link href="/login" className="text-gray-700 hover:text-red-500">
             <User className="h-6 w-6" />
           </Link>
         </div>
         <Link
-          to="/menu"
+          href="/menu"
           className="text-gray-700 hover:text-red-500 sm:hidden block "
         >
           <Menu className="h-6 w-6" />

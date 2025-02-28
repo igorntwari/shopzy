@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { Heart, ShoppingCart, Eye, Star } from "lucide-react";
+import Link from "next/link";
 
 interface ProductCardProps {
   id: number;
@@ -59,7 +59,11 @@ const ProductCard: React.FC<ProductCardProps> = ({
       </div>
 
       <div className="mt-3">
+<<<<<<< HEAD
         <Link to={`/product/${id}`}>
+=======
+        <Link href={`/product/${id}`}>
+>>>>>>> 856cf0aca4b98f4f951d232695a6526d783d3be1
           <h3 className="text-base font-medium text-black truncate">{name}</h3>
         </Link>
         <div className="flex items-center mt-1">
