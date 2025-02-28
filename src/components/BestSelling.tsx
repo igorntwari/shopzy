@@ -1,8 +1,8 @@
 "use client";
 import { ArrowRight } from "lucide-react";
-import ProductCard from "./ProductCard";
 import { useState } from "react";
 import { bestSellingProducts } from "@/data/BestSellingProducts";
+import ProductCard from "./ProductCard";
 
 const BestSelling = () => {
   const [, setShowAllProducts] = useState(false);

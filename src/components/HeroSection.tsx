@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 
-const HeroSection: React.FC = () => {
+const HeroSection = () => {
   return (
     <div className="relative bg-gray-900 overflow-hidden">
       <div className="max-w-7xl mx-auto">
