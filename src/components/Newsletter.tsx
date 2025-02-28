@@ -2,7 +2,7 @@
 import { Mail } from "lucide-react";
 import { useState } from "react";
 
-const Newsletter: React.FC = () => {
+const Newsletter = () => {
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 

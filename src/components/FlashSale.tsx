@@ -45,7 +45,7 @@ const FlashSale = () => {
   }, []);
 
   // Format time digits to always show two digits
-  const formatDigit = (digit) => {
+  const formatDigit = (digit: number) => {
     return digit < 10 ? `0${digit}` : `${digit}`;
   };
 
