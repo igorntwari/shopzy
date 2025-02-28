@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { Minus, Plus, X } from "lucide-react";
 import Link from "next/link";

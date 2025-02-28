@@ -53,19 +53,12 @@ const VoucherBanner = () => {
             </div>
           </div>
           <div className="w-1/2 flex justify-end">
-<<<<<<< HEAD
-            <img
-              src={currentProduct.imageSrc}
-              alt={currentProduct.alt}
-              className="h-64 object-contain"
-=======
             <Image
               src={currentProduct.imageSrc}
               alt={currentProduct.alt}
               className="h-64 object-contain"
               width={496}
               height={352}
->>>>>>> 856cf0aca4b98f4f951d232695a6526d783d3be1
             />
           </div>
         </div>
