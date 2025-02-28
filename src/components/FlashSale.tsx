@@ -1,7 +1,8 @@
+"use client";
 import { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
-import { flashSaleProducts } from "../data/flashSaleProducts";
 import ProductCard from "./ProductCard";
+import { flashSaleProducts } from "@/data/FlashSaleProducts";
 
 const FlashSale = () => {
   // State for countdown timer

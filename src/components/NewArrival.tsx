@@ -1,5 +1,5 @@
+import { newArrivals } from "@/data/NewArrivals";
 import { ArrowRight } from "lucide-react";
-import { newArrivals } from "../data/newArrivals";
 
 const NewArrival = () => {
   return (

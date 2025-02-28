@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 import { Send } from "lucide-react";
 
 const Footer: React.FC = () => {
+=======
+import { Send } from "lucide-react";
+import Link from "next/link";
+
+const Footer = () => {
+>>>>>>> 856cf0aca4b98f4f951d232695a6526d783d3be1
   return (
     <footer className="bg-black text-white pt-12 pb-6">
       <div className="container mx-auto px-4">
@@ -25,27 +32,27 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">Account</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/account" className="hover:text-red-500">
+                <Link href="/account" className="hover:text-red-500">
                   My Account
                 </Link>
               </li>
               <li>
-                <Link to="/login" className="hover:text-red-500">
+                <Link href="/login" className="hover:text-red-500">
                   Login / Register
                 </Link>
               </li>
               <li>
-                <Link to="/cart" className="hover:text-red-500">
+                <Link href="/cart" className="hover:text-red-500">
                   Cart
                 </Link>
               </li>
               <li>
-                <Link to="/wishlist" className="hover:text-red-500">
+                <Link href="/wishlist" className="hover:text-red-500">
                   Wishlist
                 </Link>
               </li>
               <li>
-                <Link to="/shop" className="hover:text-red-500">
+                <Link href="/shop" className="hover:text-red-500">
                   Shop
                 </Link>
               </li>
@@ -55,22 +62,22 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Link</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/privacy" className="hover:text-red-500">
+                <Link href="/privacy" className="hover:text-red-500">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="/terms" className="hover:text-red-500">
+                <Link href="/terms" className="hover:text-red-500">
                   Terms Of Use
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="hover:text-red-500">
+                <Link href="/faq" className="hover:text-red-500">
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-red-500">
+                <Link href="/contact" className="hover:text-red-500">
                   Contact
                 </Link>
               </li>

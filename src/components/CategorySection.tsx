@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 interface Category {
   id: number;
@@ -55,7 +55,11 @@ const CategorySection: React.FC = () => {
           {categories.map((category) => (
             <Link
               key={category.id}
+<<<<<<< HEAD
               to={`/category/${category.id}`}
+=======
+              href={`/category/${category.id}`}
+>>>>>>> 856cf0aca4b98f4f951d232695a6526d783d3be1
               className="group relative rounded-lg overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300"
             >
               <div className="aspect-w-3 aspect-h-2 h-60">
@@ -78,7 +82,7 @@ const CategorySection: React.FC = () => {
 
         <div className="mt-10 text-center">
           <Link
-            to="/categories"
+            href="/categories"
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200"
           >
             View All Categories

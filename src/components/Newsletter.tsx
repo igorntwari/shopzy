@@ -1,4 +1,6 @@
+"use client";
 import { Mail } from "lucide-react";
+import { useState } from "react";
 
 const Newsletter: React.FC = () => {
   const [email, setEmail] = useState("");
